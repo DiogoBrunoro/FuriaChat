@@ -41,12 +41,16 @@ https://github.com/user-attachments/assets/b4507c7c-76be-48bb-b623-2e8855f668ed
 | JavaScript (ES6)   | Lógica de interação e validação      |
 | Node.js + Express  | Backend da aplicação (login e socket)|
 | Socket.io          | Comunicação em tempo real (chat)     |
-| MongoDB            | Banco de dados para usuários e mensagens |
 | bcrypt             | Criptografia de senhas               |
 | JWT                | Autenticação segura                  |
-| Netlify / Vercel   | Hospedagem da interface              |
-| Render / Heroku    | Hospedagem do backend                |
 
 ---
+
+⚙️ Pré-requisitos
+Node.js e npm instalados
+
+Banco de dados MySQL ativo
+
+Um banco de dados criado (ex: furia_chat)
 
 
