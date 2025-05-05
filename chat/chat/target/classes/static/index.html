@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ChatFuria</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header.css" />
+  </head>
+  <body>
+    <noscript>
+      <h2>Sorry! Your browser doesn't support Javascript</h2>
+    </noscript>
+
+    <div id="username-page">
+      <div class="username-page-container">
+        <h1 class="title">Type your username to enter the Chatroom</h1>
+        <form id="usernameForm" name="usernameForm">
+          <div class="form-group">
+            <input
+              type="text"
+              id="name"
+              placeholder="Username"
+              autocomplete="off"
+              class="form-control"
+            />
+          </div>
+          <div class="form-group">
+            <button type="submit" class="accent username-submit">
+              Start Chatting
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="chat-page" class="hidden">
+      <img
+        src="img/38395fd171aa4ab109e249df66905ae3.jpg"
+        alt=""
+        class="background-image"
+      />
+      <div class="chat-container">
+        <div class="chat-header">
+          <h2>Furia Chat</h2>
+        </div>
+        <div class="connecting">Connecting...</div>
+        <ul id="messageArea"></ul>
+        <form id="messageForm" name="messageForm">
+          <div class="form-group">
+            <div class="input-group clearfix">
+              <input
+                type="text"
+                id="message"
+                placeholder="Type a message..."
+                autocomplete="off"
+                class="form-control"
+              />
+              <button type="submit" class="primary">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <header>
+      <div class="copyright">&copy; 2025. Todos os direitos reservados.</div>
+      <div class="social-icons">
+          <a href="https://x.com/FURIA" target="_blank">Twitter</a>
+          <a href="https://www.instagram.com/furiagg/" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/furiagg" target="_blank">Facebook</a>
+          <a href="https://www.youtube.com/@FURIAggCS" target="_blank">YouTube</a>
+      </div>
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

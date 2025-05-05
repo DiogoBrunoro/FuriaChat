@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Perfil do Usuário</title>
+    <link rel="stylesheet" href="css/perfil.css" />
+    <link rel="stylesheet" href="css/header.css" />
+  </head>
+  <body>
+    <div class="perfil-container">
+      <h2 id="username-title">Perfil de Usuário</h2>
+
+      <div id="fotoContainer" class="foto-perfil"></div>
+      <input
+        type="file"
+        id="edit-foto"
+        class="input-field"
+        style="display: none"
+      />
+      <button
+        id="change-photo-button"
+        class="change-photo-button"
+        style="display: none"
+      >
+        Alterar Foto
+      </button>
+
+      <p><strong>Nome de Usuário:</strong> <span id="username"></span></p>
+
+      <p>
+        <strong>Descrição:</strong><br />
+        <textarea
+  id="edit-descricao"
+  class="descricao-input"
+  disabled
+  rows="1"
+  oninput="autoResize(this)"
+></textarea>
+
+      </p>
+
+      <button id="edit-button" class="edit-button">Editar Perfil</button>
+      <button id="save-button" class="save-button" style="display: none">
+        Salvar Alterações
+      </button>
+    </div>
+
+    <script src="js/perfil.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background: url("/img/38395fd171aa4ab109e249df66905ae3.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    image-rendering: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+  
+  .auth-container {
+    position: relative;
+    z-index: 1;
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 0.85);
+    opacity: 0.8;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  }
+  
+  .fade-in-up {
+    animation: fadeInUp 0.5s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(100px);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
