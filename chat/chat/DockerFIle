@@ -2,7 +2,7 @@
 FROM maven:3.8.4-openjdk-11-slim AS build
 
 # Defina o diretório de trabalho no contêiner
-WORKDIR /app
+WORKDIR /chat
 
 # Copie os arquivos do projeto para o contêiner
 COPY . .
@@ -14,10 +14,11 @@ RUN mvn clean install
 FROM openjdk:11-jre-slim
 
 # Defina o diretório de trabalho no contêiner
-WORKDIR /app
+WORKDIR /chat
 
 # Copie o arquivo JAR gerado pela primeira etapa
-COPY --from=build /app/target/chat-0.0.1-SNAPSHOT.jar /app/chat.jar
+# O arquivo JAR está no diretório target/chat e seu nome será chat-0.0.1-SNAPSHOT.jar
+COPY --from=build /chat/chat/target/chat-0.0.1-SNAPSHOT.jar /chat/chat.jar
 
 # Comando para rodar o JAR
-CMD ["java", "-jar", "chat.jar"]
+CMD ["java", "-jar", "/chat/chat.jar"]
