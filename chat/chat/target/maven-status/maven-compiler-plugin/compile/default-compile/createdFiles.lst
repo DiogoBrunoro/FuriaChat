@@ -9,8 +9,8 @@ com\furia\chat\config\WebSocketConfig.class
 com\furia\chat\entites\UserEntity.class
 com\furia\chat\dto\AuthUserDTO$AuthUserDTOBuilder.class
 com\furia\chat\ChatMessage$ChatMessageBuilder.class
-com\furia\chat\dto\UserDTO$UserDTOBuilderImpl.class
 com\furia\chat\ChatController.class
+com\furia\chat\services\UserService.class
 com\furia\chat\dto\UserDTO.class
 com\furia\chat\ChatMessage.class
 com\furia\chat\ChatApplication.class
@@ -19,7 +19,6 @@ com\furia\chat\dto\PerfilUpdateDTO.class
 com\furia\chat\config\WebSocketEventListener.class
 com\furia\chat\MessageType.class
 com\furia\chat\dto\UserDTO$UserDTOBuilder.class
-com\furia\chat\entites\UserEntity$UserEntityBuilderImpl.class
 com\furia\chat\entites\UserEntity$UserEntityBuilder.class
 com\furia\chat\services\Auth\AuthUserService.class
 com\furia\chat\controller\userController.class
